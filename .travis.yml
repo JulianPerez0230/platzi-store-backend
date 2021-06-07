@@ -17,7 +17,7 @@ script:
 notifications:
   slack: espacio-de-estudio:Lt1swDIOAyUy8FANO4RM7HQh
   email:
-    reciepients:
+    recipients:
       - julianandres.perez.30@gmail.com
     on_success: always
     on_failure: always

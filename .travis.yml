@@ -1,0 +1,32 @@
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+
+node_js:
+  - '12'
+
+git:
+  depth: 3
+
+script:
+  - yarn test
+
+notifications:
+  slack: espacio-de-estudio:Lt1swDIOAyUy8FANO4RM7HQh
+  email:
+    reciepients:
+      - julianandres.perez.30@gmail.com
+    on_success: always
+    on_failure: always
+
+deploy:
+  provide: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: 191d6825-2ae9-42ef-b298-aecb3f7b3d5c
+  app: platzi-store-backend
+  on:
+    repo: JulianPerez0230/platzi-store-backend

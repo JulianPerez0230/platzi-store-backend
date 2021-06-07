@@ -27,6 +27,6 @@ deploy:
   skip-cleanup: true
   keep-history: true
   api_key: 191d6825-2ae9-42ef-b298-aecb3f7b3d5c
-  app: platzi-store-backend
+  app: curso-travis-platzi-store
   on:
     repo: JulianPerez0230/platzi-store-backend
